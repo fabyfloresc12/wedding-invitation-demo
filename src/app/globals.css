@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-playfair), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.font-script {
+  font-family: var(--font-script), cursive;
+}
+
+.font-body {
+  font-family: var(--font-playfair), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
