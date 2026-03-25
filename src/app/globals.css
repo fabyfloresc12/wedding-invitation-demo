@@ -3,6 +3,12 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #000000;
+  --color-accent: #d4af37;
+  --color-surface: #faf7f1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +16,8 @@ body {
   color: #000000;
   font-family: var(--font-playfair), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 .font-script {
@@ -19,4 +27,24 @@ body {
 .font-body {
   font-family: var(--font-playfair), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 28%, white);
+  color: #000000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Great_Vibes, Playfair_Display } from "next/font/google";
+
+import { invitationContent } from "@/content/invitation";
+
 import "./globals.css";
 
 const scriptFont = Great_Vibes({
@@ -14,8 +17,8 @@ const bodyFont = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Isabella & Sebastian",
-  description: "Invitación de boda de Isabella & Sebastian",
+  title: invitationContent.metadata.title,
+  description: invitationContent.metadata.description,
 };
 
 export default function RootLayout({
