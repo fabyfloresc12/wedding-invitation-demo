@@ -15,7 +15,7 @@ export function HeroSection({ content }: HeroSectionProps) {
         src={content.image.src}
         alt={content.image.alt}
         fill
-        priority
+        preload
         quality={82}
         sizes="100vw"
         className="object-cover opacity-70 scale-105"

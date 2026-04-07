@@ -46,7 +46,7 @@ export function IntroOverlay({ content, fading, onOpen }: IntroOverlayProps) {
             src={content.image.src}
             alt={content.image.alt}
             fill
-            priority
+            preload
             quality={88}
             sizes="(max-width: 640px) 88vw, 432px"
             className="object-contain drop-shadow-[0_14px_34px_rgba(60,42,14,0.12)]"
